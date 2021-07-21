@@ -1,0 +1,26 @@
+
+html {
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4{
+    color: $poolre-primary;
+}
+
+h1{
+    padding-top: 5rem;
+    display: inline-block;
+}
+
+
+table a:link, a:visited{
+    text-decoration: none;
+}
+
+table a:hover, a:active{
+    text-decoration: underline;
+}
+
+form {
+    font-size: 1.4rem;
+}

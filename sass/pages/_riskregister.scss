@@ -1,0 +1,60 @@
+.rr {
+    font-size: 1.4rem;
+    
+    a{
+        text-decoration: none;
+    }
+
+    &__header {
+        font-size: 1rem;
+    }
+
+    
+
+    &__danger:link, &__danger:visited {
+        color: $danger;
+    }
+
+    &__danger:hover, &__danger:active {
+        color: darken($danger, 10%);
+    }
+
+    &-site {
+        font-weight: 500;
+    }
+
+    &-item {
+
+        &__icon {
+            margin-right: .5rem;
+        }
+        
+        &__count {
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding-top: .2rem;
+        }
+
+    
+
+        transition: all .2s;
+       
+        &:hover {
+            background-color: rgba(248,231,28,.1);
+        }
+        
+        &__active{
+            background-color: $light;
+
+             &:hover {
+                 background-color: rgba(137,146,0,.1);
+            }
+        }
+
+      
+    }
+
+    
+    
+
+}

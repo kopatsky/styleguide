@@ -1,0 +1,33 @@
+
+
+.top-menu {
+    // height: 3.5rem;
+    font-weight: 400;
+
+    &__data{
+        justify-content: flex-end;
+    }
+    
+    &__logo{
+        align-self: center;
+        font-size: 1.8rem;
+        opacity: .3;
+        
+    }
+
+    &__user{
+        align-self: center;
+        font-size: 1.4rem;
+    }
+
+    &__icon, &__icon:link,  &__icon:visited{
+        align-self: center;
+        font-size: 1.4rem;
+        transition: all .2s;
+
+    }
+
+    &__icon:hover, &__icon:active {
+        transform: translateY(-1px);
+    }
+}

@@ -1,0 +1,31 @@
+
+// FONTS
+
+$font-primary: 'Montserrat', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+
+
+
+// COLORS
+
+$poolre-primary: #201747;
+
+$primary:   #0082ca; // #cerulean
+$secondary: #99a9b5; // #cool-grey
+$success:   #94c836; // #sick-green
+$danger:    #D0021B;
+$warning:   #F5A623;
+$light:     #f4f6f7; // #pale-grey
+$dark-blue: #201747; // #dark-blue-grey - extra theme color variant
+$body:      #585858; // main text color 
+$muted:     #DFE5E8; // 
+
+// Fix automatic contrast color selection for primary buttons
+.btn-primary, 
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-success
+ {
+  @extend .text-white;
+}

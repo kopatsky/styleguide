@@ -1,0 +1,53 @@
+.table thead th {
+    border: none;
+}
+
+.table, 
+.table td, .table th{
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    
+}
+
+tr {
+    transition: all .5s;
+}
+
+
+.main-table {
+
+    &__thead {
+        background-color: $poolre-primary;
+        color: white;
+        text-align: left;
+        height: 6rem;
+        
+        
+       
+    }
+
+    &__th {
+        vertical-align: middle !important;
+    }
+
+}
+
+tr:hover:not(:first-child) {
+    background-color: rgba(248,231,28,.1);
+}
+
+.table-striped tbody tr:nth-of-type(odd):hover{
+    background-color: rgba(137,146,0,.1);
+}
+
+tr:last-child {
+    border-bottom: 1px solid rgba($poolre-primary, .1);
+}
+
+
+
+
+
+
+
