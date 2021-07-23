@@ -24,3 +24,19 @@
 .bg-modal {
     background-color: rgba($dark, .6);
 }
+
+.modal{
+    &-content {
+        font-size: 1.4rem;
+    }
+
+    &-h{
+        color: $body;
+        font-size: 2rem;
+    }
+
+    &-height{
+        max-height: 40vh;
+    }
+}
+

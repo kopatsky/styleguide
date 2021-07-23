@@ -7576,6 +7576,16 @@ form {
 .bg-modal {
   background-color: rgba(32, 23, 71, 0.6); }
 
+.modal-content {
+  font-size: 1.4rem; }
+
+.modal-h {
+  color: #585858;
+  font-size: 2rem; }
+
+.modal-height {
+  max-height: 40vh; }
+
 .table thead th {
   border: none; }
 
