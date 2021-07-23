@@ -87,6 +87,45 @@
 
     }
 
+    &-descr{
+        &__h2{
+            color: $body;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            font-weight: 300;
+        }
+
+        &__h3{
+            color: $body;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            font-weight: 500;
+
+            }
+        }
+
+    &-comments{
+        
+        &__more{
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 0rem;
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: $light;
+        }
+          }
+        &__date, &__author{
+            font-size: 1.2rem;
+        }
+    
+    }
+
     
     
 
@@ -99,4 +138,8 @@
 
 .pt-second {
     padding-top: 2rem;
+}
+
+.pt-third {
+    padding-top: 2.5rem;
 }

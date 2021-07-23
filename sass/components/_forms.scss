@@ -3,8 +3,8 @@
 }
 
 .btns-poolre {
-    padding: .5rem 5rem;
-    min-width: 7rem;
+    padding: .5rem 2rem;
+    min-width: 12rem;
 
     &__icon {
         padding: .5rem .5rem;
@@ -19,4 +19,8 @@
 
 .form-select {
     -webkit-appearance: none;
+}
+
+.bg-modal {
+    background-color: rgba($dark, .6);
 }

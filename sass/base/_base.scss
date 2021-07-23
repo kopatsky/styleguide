@@ -21,3 +21,11 @@ body {
     font-weight: 300;
     line-height: 1.6;
 }
+
+form a:link, a:visited {
+    text-decoration: none;
+}
+
+form a:hover, a:active {
+    text-decoration: underline;
+}
