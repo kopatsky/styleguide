@@ -1,0 +1,208 @@
+// .table-container {
+//   display: grid;
+//   grid-template-rows: repeat(2,min-content);
+// }
+
+.row-container {
+  padding: 1rem 0 1rem 0;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  &:nth-child(odd) {
+    background-color: white;
+  }
+  &:nth-child(even) {
+    background-color: $light;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    grid-template-rows: [site-start] min-content [site-end type-start] min-content [type-end qs-start] min-content [qs-end];
+    grid-template-columns: 1rem [content-start] 1fr [content-end] 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .site {
+    padding: 0.7rem 0 1.4rem 1rem;
+
+    grid-column: col-start 1 / col-end 2;
+
+    .siteName {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .siteAddress {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      grid-row: site-start/site-end;
+      grid-column: content-start/content-end;
+      padding: 0.7rem 0 0 0;
+    }
+  }
+  .site-type {
+    padding: 0.7rem 0 0.7rem 1rem;
+    grid-column: col-start 3 / col-end 3;
+    @media only screen and (max-width: $bp-sm) {
+      grid-row: type-start/type-end;
+      grid-column: content-start/content-end;
+      padding: 0 0 1.4rem 0;
+    }
+  }
+  .qs {
+    //   border-bottom: 1px solid $light;
+    grid-column: col-start 4 / col-end 12;
+    background-color: inherit;
+    display: grid;
+    grid-template-rows: [qs-start] 3rem [qs-end s-start] min-content [s-end more-start] 3rem [more-end];
+    grid-template-columns: repeat(7, [col-start] 1fr [col-end]) [status-start] 13rem [status-end action-start] 1fr [action-end];
+
+    @media only screen and (max-width: $bp-sm) {
+      grid-row: qs-start/qs-end;
+      grid-column: content-start/content-end;
+
+      display: grid;
+      grid-template-rows: [qs-start] min-content [qs-end assessor-start] min-content [assessor-end info-start] min-content [info-end sections-start] min-content [sections-end more-start] 3rem [more-end action-start] min-content [action-end];
+      grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+    }
+
+    .questionSetName {
+      font-weight: 600;
+      padding: 0.7rem 0 0.7rem 1rem;
+      border-bottom: 1px solid rgba($body, 0.1);
+      // width: 50rem;
+      overflow: hidden;
+      grid-column: col-start 1 / col-end 3;
+
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: qs-start/qs-end;
+        grid-column: col-start 1 / col-end 3;
+        padding: 0 0 0.7rem 0;
+        font-size: 1.6rem;
+        border-bottom: none;
+      }
+    }
+
+    .assessor {
+      padding: 0.7rem 0 0.7rem 1rem;
+      border-bottom: 1px solid rgba($body, 0.1);
+      grid-column: col-start 4 / col-end 5;
+      background-color: inherit;
+
+      a {
+        text-decoration: none;
+      }
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: assessor-start/assessor-end;
+        grid-column: col-start 1 / col-end 3;
+        padding: 0 0 0.7rem 0;
+        font-size: 1.2rem;
+      }
+    }
+    .qs-score {
+      text-align: center;
+      padding: 0.7rem 0 0.7rem 1rem;
+      border-bottom: 1px solid rgba($body, 0.1);
+      grid-column: col-start 6 / col-end 6;
+
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: info-start/info-end;
+        grid-column: col-start 3 / col-end 3;
+        text-align: end;
+        padding: 1.4rem 0 1.4rem 1rem;
+      }
+    }
+
+    .sections {
+      grid-row: s-start / s-end;
+      grid-column: col-start 1 / col-end 6;
+      display: grid;
+      grid-template-rows: repeat(3, 3rem);
+      grid-template-columns: repeat(6, [col-start] 1fr [col-end]);
+
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: sections-start/sections-end;
+        grid-column: col-start 1 / col-end 3;
+
+        grid-template-rows: repeat(3, 3rem);
+        grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+      }
+
+      .section {
+        border-bottom: 1px solid rgba($body, 0.1);
+        padding: 0.7rem 0 0.7rem 1rem;
+        grid-column: col-start 1 / col-end 5;
+        @media only screen and (max-width: $bp-sm) {
+          grid-column: col-start 1 / col-end 2;
+          padding: 0.7rem 0 0.7rem 0;
+        }
+      }
+      .score {
+        text-align: center;
+        border-bottom: 1px solid rgba($body, 0.1);
+        padding: 0.7rem 0 0.7rem 1rem;
+        grid-column: col-start 6 / col-end 6;
+
+        @media only screen and (max-width: $bp-sm) {
+          grid-column: col-start 3 / col-end 3;
+          text-align: end;
+        }
+      }
+    }
+    .completeDate {
+      padding: 0.7rem 0 0.7rem 1rem;
+      grid-row: qs-start / qs-end;
+      grid-column: col-start 7 / col-end 7;
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: info-start/info-end;
+        grid-column: col-start 2 / col-end 2;
+        text-align: center;
+        padding: 1.4rem 0 1.4rem 1rem;
+        border-bottom: 1px solid rgba($body, 0.1);
+      }
+    }
+
+    .status {
+      padding: 0.7rem 0 0.7rem 1rem;
+      grid-column: status-start/ status-end;
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: info-start/info-end;
+        grid-column: col-start 1 / col-end 1;
+        padding: 1.4rem 0 1.4rem 0;
+        border-bottom: 1px solid rgba($body, 0.1);
+      }
+    }
+
+    .action {
+      text-align: end;
+      padding: 0.3rem 1rem 0.3rem 1rem;
+      grid-column: action-start / action-end;
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: action-start/action-end;
+        grid-column: col-start 1 / col-end 3;
+        padding: 0.7rem 0 0.7rem 0;
+      }
+    }
+    .more {
+      padding: 0.7rem 0 0.7rem 1rem;
+      grid-row: more-start / more-end;
+      grid-column: col-start 1 / col-end 3;
+
+      a {
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: $bp-sm) {
+        grid-row: more-start/more-end;
+        grid-column: col-start 1 / col-end 3;
+        padding: 0.7rem 0 0.7rem 0;
+      }
+    }
+  }
+}
