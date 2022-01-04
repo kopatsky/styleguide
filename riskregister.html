@@ -42,7 +42,7 @@
               <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
             </li>
             <li class="nav-item  top-menu__icon">
-              <a class="nav-link active" href="#"><i class="fas fa-cogs"></i></a>
+              <a class="nav-link" href="form.html"><i class="fas fa-cogs"></i></a>
             </li>
             <li class="nav-item  top-menu__icon">
               <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
@@ -73,6 +73,7 @@
             <a class="nav-link main-menu__link" href="#">Companies</a>
             <a class="nav-link main-menu__link" href="#">Questions</a>
             <a class="nav-link main-menu__link" href="#">Assessmnets</a>
+            <a class="nav-link main-menu__link active" href="#">Risk Register</a>
             <a class="nav-link main-menu__link" href="#">Statistics</a>    
     </div>
   </nav>
@@ -85,24 +86,27 @@
         </h1>
 
         <div class="row mt-5 rr">
-            <div class="col-sm-3 bg-light rr__header">
+            <div class="col-sm-3 bg-light px-4 rr__header">
                 Sites
             </div>
                 
-            <div class="col-sm-3 bg-light border-start border-white rr__header">
+            <div class="col-sm-3 bg-light px-4 border-start border-white rr__header">
                 Risks
             </div>
                 
         
-            <div class="col-sm-6 bg-light border-start border-white rr__header">
+            <div class="col-sm-6 bg-light px-4 border-start border-white rr__header">
                 Risk's Description
             </div> 
         </div>
 
-        <div class="row mt-5 rr">
-            <div class="col-sm-3 pe-3">
-               
-                <!- sites table header ->
+        <div class="row mt-1 rr">
+
+          <!- FIRST COLUMN DATA ->      
+        
+            <div class="col-sm-3 px-4 pt-5">
+
+          <!- sites table header ->
                 <div class="row mb-4">
                     <div class="col-sm-8 rr__header">
                         Site/Assessment
@@ -115,7 +119,7 @@
                     </div>
                 </div>
 
-                <!- sites table smart folders ->
+        <!- sites table smart folders ->
                 <a href="#" class="row py-2 rr-item rr-item__active">
                         <div class="col-sm-8">
                             <i class="fas fa-check rr-item__icon"></i>Pending review
@@ -150,7 +154,7 @@
                  </a>
             
 
-                <!- site table ->
+        <!- site table ->
                 <div class="col mt-4 rr-site">
                     BBC London
                 </div>
@@ -174,7 +178,7 @@
                     <div class="col-sm-2">
                         <span class="badge rounded-pill bg-warning color-light score-bage">2%</span>
                     </div>
-                    <div class="col-sm-2 text-center rr__count">
+                    <div class="col-sm-2 text-center rr-item__count">
                         2
                     </div>
                  </a>
@@ -206,8 +210,293 @@
             
             
             </div>
+            <!- SECOND COLUMN DATA ->      
+        
+            <div class="col-sm-3 px-4 pt-second border-start border-light rr">
+              <ul class="nav mb-3 nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">In Progress <span class="badge bg-light rr-bage">2</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inbox <span class="badge bg-light rr-bage">3</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More...</a>
+                  <ul class="dropdown-menu rr-dropdown">
+                    <li><a class="dropdown-item" href="#">New</a></li>
+                    <li><a class="dropdown-item" href="#">Completed</a></li>
+                    <li><a class="dropdown-item" href="#">Mitigated</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-Risk ->
+              <a href="#" class="row py-2 border-bottom border-light rr-item rr-item__active rr-risk">
+                    <div class="d-flex justify-content-between">
+                      <div class="text-secondary">
+                        <i class="fas fa-calendar-alt rr-item__icon"></i>12/08/21
+                      </div>
+                      <div class="text-end">
+                        <span class="badge bg-white rr-bage__high mb-1">Risk - High</span>
+                        <span class="badge bg-white rr-bage__low">Priority - Low</span>
+                      </div>
+                    </div>
+                  
+                    <div class="my-4 rr-risk__text">
+                      There are external landscape features (trees, poles or street furniture) that …
+                  </div>
+
+                  <div class="d-flex justify-content-between pb-2 ">
+                    <div class="text-secondary">
+                      Mr. A. Wood
+                    </div>
+                    <div class="text-secondary">
+                      <i class="fas fa-comment rr-item__icon"></i>10
+                    </div>
+
+                  </div>
+              </a>
+
+              <!-Risk ->
+              <a href="#" class="row py-2 border-bottom border-light rr-item rr-risk">
+                    <div class="d-flex justify-content-between">
+                      <div class="text-secondary">
+                        <i class="fas fa-calendar-alt rr-item__icon"></i>12/08/21
+                      </div>
+                      <div class="text-end">
+                        <span class="badge bg-light rr-bage__high mb-1">Risk - High</span>
+                        <span class="badge bg-light rr-bage__low">Priority - Low</span>
+                      </div>
+                    </div>
+                  
+                    <div class="my-4 rr-risk__text">
+                      There are external landscape features (trees, poles or street furniture) that …
+                  </div>
+
+                  <div class="d-flex justify-content-between pb-2 ">
+                    <div class="text-secondary">
+                      Mr. A. Wood
+                    </div>
+                    <div class="text-secondary">
+                      <i class="fas fa-comment rr-item__icon"></i>10
+                    </div>
+
+                  </div>
+              </a>
+
+              <!-Risk ->
+              <a href="#" class="row py-2 border-bottom border-light rr-item rr-risk">
+                    <div class="d-flex justify-content-between">
+                      <div class="text-secondary">
+                        <i class="fas fa-calendar-alt rr-item__icon"></i>12/08/21
+                      </div>
+                      <div class="text-end">
+                        <span class="badge bg-light rr-bage__high mb-1">Risk - High</span>
+                        <span class="badge bg-light rr-bage__low">Priority - Low</span>
+                      </div>
+                    </div>
+                  
+                    <div class="my-4 rr-risk__text">
+                      There are external landscape features (trees, poles or street furniture) that …
+                  </div>
+
+                  <div class="d-flex justify-content-between pb-2 ">
+                    <div class="text-secondary">
+                      Mr. A. Wood
+                    </div>
+                    <div class="text-secondary">
+                      <i class="fas fa-comment rr-item__icon"></i>10
+                    </div>
+
+                  </div>
+              </a>
+
+              <!-Risk ->
+              <a href="#" class="row py-2 border-bottom border-light rr-item rr-risk">
+                    <div class="d-flex justify-content-between">
+                      <div class="text-secondary">
+                        <i class="fas fa-calendar-alt rr-item__icon"></i>12/08/21
+                      </div>
+                      <div class="text-end">
+                        <span class="badge bg-light rr-bage__high mb-1">Risk - High</span>
+                        <span class="badge bg-light rr-bage__low">Priority - Low</span>
+                      </div>
+                    </div>
+                  
+                    <div class="my-4 rr-risk__text">
+                      There are external landscape features (trees, poles or street furniture) that …
+                  </div>
+
+                  <div class="d-flex justify-content-between pb-2 ">
+                    <div class="text-secondary">
+                      Mr. A. Wood
+                    </div>
+                    <div class="text-secondary">
+                      <i class="fas fa-comment rr-item__icon"></i>10
+                    </div>
+
+                  </div>
+              </a>
+
+            </div>
+
+            <!- THIRD COLUMN DATA ->      
+        
+            <div class="col-sm-6 pt-third border-start border-light rr">
             
-        </div>    
+              <!- Risk Description Header ->   
+              <div class="ps-3">
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="text-dark">
+                    Covid 19 Risk Assessment NEW
+                  </div>
+                  <div class="text-dark">
+                    BBC London 
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div class="text-secondary">
+                    Created by: <nobr>Mr. A. Wood</nobr>
+                  </div>
+                  <div class="text-secondary text-end"">
+                    <i class="fas fa-calendar-alt rr-item__icon"></i><span><nobr>Started 12/03/21</nobr></span>, <span><nobr>Due 12/05/21</nobr></span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="text-secondary">
+                    Risk Owner: <nobr>Mr. A. Wood</nobr>
+                  </div>
+                  <div class="text-end">
+                    <span class="badge bg-light rr-bage__high mb-1">Risk - High</span>
+                    <span class="badge bg-light rr-bage__low">Priority - Low</span> 
+                  </div>
+                </div>
+            
+              </div>
+
+              <!- Risk Description Question -> 
+              <div class="p-4">
+                  <h2 class="rr-descr__h2 mb-4">
+                    <i class="fas fa-circle text-warning me-2"></i>Does any external landscape feature (trees, poles or street furniture) obscure CCTV views of the area immediately beyond your perimeter?
+                  </h2>
+
+                  <!- Risk Description Answer -> 
+                  <p>
+                    <span class="fw-bold">Answer is: </span><span>Yes</span>
+                  </p>
+                  <p>
+                    <span class="fw-bold">Comments: </span><span>There are trees that are obscuring the western corner wall camera.</span>
+                  </p>
+                  <p>
+                    <span class="fw-bold">Advice: </span><span>The ability to view your perimeter from a security standpoint enables potentially early warning of a physical attack on your perimeter. Where the attack is an active shooter or knife attack this warning may make the difference between being able to lock down your building to prevent access by the attackers thereby reducing the risk of death or injury to staff and or visitors and the attackers getting inside where the likelihood of mass casualties is much greater.</span>
+                  </p>
+              </div>
+          
+              <!- Risk Description Risk -> 
+              <div class="bg-light p-4">
+                <h3 class="rr-descr__h3">
+                  Risk
+                </h3>
+                <p class="mb-5">
+                  There are external landscape features (trees, poles or street furniture) that obscure CCTV views of the area immediately beyond your perimeter?
+                </p>
+                <h3 class="rr-descr__h3">
+                  Mitigation Plan
+                </h3>
+                <p class="mb-5">
+                  Prune the trees so that the corner wall camera has full view of the access road to the west and east.
+                </p>
+                <div>
+                  <button type="submit" class="btn btn-primary text-uppercase btns-poolre btn-lg">Add  Action Addressee</button>
+                </div>
+              </div>
+              
+              <!- Risk Description More comments -> 
+              <div class="mt-4 p- rr-comments__more">
+                <button type="submit" class="btn btn-outline-light text-uppercase text-muted btns-poolre btn-lg">5 More Comments</button>
+              </div>
+
+              <!- Risk Description Comments -> 
+              <div class="px-4 py-3">
+                <div class="text-secondary rr-comments__date">
+                  <span>21/03/21</span> Status: <span>In progress</span>
+                </div>
+                <div class="text-secondary rr-comments__author">
+                  Mr. A. Wood
+                </div>
+                <div class="mt-2">
+                  <p>
+                    Prune the trees so that the corner wall camera has full view of the access road to the west and east.
+                  </p>
+                </div>
+                
+              </div>
+
+              <!- Risk Description Comments -> 
+              <div class="px-4 py-3">
+                <div class="text-secondary rr-comments__date">
+                  <span>21/03/21</span> Status: <span>In progress</span>
+                </div>
+                <div class="text-secondary rr-comments__author">
+                  Mr. A. Wood
+                </div>
+                <div class="mt-2">
+                  <p>
+                    Prune the trees so that the corner wall camera has full view of the access road to the west and east.
+                  </p>
+                </div>
+                
+              </div>
+
+              <!- Risk Description Add Comment-> 
+              <div class="bg-light p-4">
+                <h3 class="rr-descr__h3">
+                  Add Comment
+                </h3>
+                <form>
+                  <div class="row mb-3">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <select class="form-select  form-select-lg mb-2" aria-label="Change Status">
+                            <option selected>Change Status</option>
+                            <option value="1">Started</option>
+                            <option value="2">In Progress</option>
+                            <option value="3">Finished</option>
+                            <option value="4">Closed</option>
+                          </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <select class="form-select  form-select-lg mb-2" aria-label="Change Priority">
+                          <option selected>Change Priority</option>
+                          <option value="1">Low</option>
+                          <option value="2">Medium</option>
+                          <option value="3">High</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <select class="form-select  form-select-lg mb-2" aria-label="Change Risk">
+                          <option selected>Change Risk</option>
+                          <option value="1">Low</option>
+                          <option value="2">Medium</option>
+                          <option value="3">High</option>
+                        </select>
+                    </div>
+                  </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="newComment" placeholder="Add Comment" rows="4"></textarea>
+                    </div>
+                    <div class="mb-4">
+                      <a href="#">
+                        <i class="fas fa-paperclip text-body rr-item__icon"></i>Attach file
+                      </a>
+                    </div>
+                    
+                    <div>
+                      <button type="submit" class="btn btn-primary text-uppercase btns-poolre btn-lg">Add Comment</button>
+                    </div>  
+                </form>
+              </div>
+              
+        </div> 
                 
     </setion>
 

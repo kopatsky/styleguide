@@ -73,6 +73,7 @@
             <a class="nav-link main-menu__link" href="#">Companies</a>
             <a class="nav-link main-menu__link" href="#">Questions</a>
             <a class="nav-link main-menu__link" href="#">Assessmnets</a>
+            <a class="nav-link main-menu__link" href="riskregister.html">Risk Register</a>
             <a class="nav-link main-menu__link" href="#">Statistics</a>    
     </div>
   </nav>
@@ -118,7 +119,7 @@
                                 <label for="phone" class="col-md-3 col-form-label">User's Groups</label>
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Group 1">
-                                    <a href="#">Change...</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#changeGroup" href="">Change...</a>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -195,11 +196,96 @@
                                   <input class="form-control form-control-lg" id="firstName">
                                 </div>
                               </div>
+                              
                     </div>
                     
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary text-uppercase btns-poolre btn-lg">Sign in</button>
-                    </div>                    
+                        <button type="submit" class="btn btn-primary text-uppercase btn-lg btns-poolre">Sign in</button>
+                    </div>    
+                    
+                    <!-- Change Group Modal -->
+                      <div class="modal fade bg-modal" id="changeGroup" tabindex="-1" aria-labelledby="changeGroup" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header p-4 border-bottom-0">
+                              <h5 class="modal-title modal-h" id="exampleModalLabel">Select Group</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="px-4 pb-3 border-bottom">
+                              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Start type to search...">
+                            </div>
+                            <div class="modal-body bg-light modal-height">
+                              <div class="list-group">
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  First checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Second checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Third checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Fourth checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Fifth checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  First checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Second checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Third checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Fourth checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Fifth checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  First checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Second checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Third checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Fourth checkbox
+                                </label>
+                                <label class="list-group-item border-0 border border-bottom border-white bg-light">
+                                  <input class="form-check-input me-1" type="checkbox" value="">
+                                  Fifth checkbox
+                                </label>
+                              </div>
+                            </div>
+                            <div class="modal-footer justify-content-center p-4">
+                              <button type="button" class="btn btn-primary btn-lg btns-poolre">Save changes</button>
+                              <button type="button" class="btn btn-outline-primary btn-lg btns-poolre" data-bs-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>                
                  </form>
                 
     </setion>
